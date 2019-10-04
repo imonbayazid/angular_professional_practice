@@ -1,0 +1,18 @@
+﻿<div><h5>{{appService.deployedEnvironment}}  > Medicare  > Submission [ {{this.service.userType}} ]</h5></div>
+<submission-profile-list-form></submission-profile-list-form>
+<div class="col-md-12">
+    <submission-profile-products-grid></submission-profile-products-grid>
+</div>
+    
+<div class="row">
+    <div class="col-md-offset-1 col-md-6 warningText">
+        <p>{{this.service.warningText}}</p>
+    </div>
+    <div class="col-md-offset-11 col-md-1">
+        <button type="button" [style.display]="this.service.isExportButtonEnabled && this.service.btnVisible?'block':'none'" (click)="exportButtonOperation()" class="btn btn-primary">{{this.service.buttonName}}</button>
+    </div>
+</div>
+
+
+
+

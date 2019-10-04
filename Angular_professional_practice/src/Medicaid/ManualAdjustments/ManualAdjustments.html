@@ -1,0 +1,20 @@
+    <div><h5>{{service.appService.deployedEnvironment}}  > {{agency_type}} > Manual Adjustments [ {{windowTitle}} ]</h5></div>
+
+   <manual-adjustment-search ></manual-adjustment-search>
+   <manual-adjustment-main-grid > </manual-adjustment-main-grid>
+    <div> Row: {{rowNumber}} of {{totalData}} </div>
+     <div class="pull-right">
+    <button type="button" *ngIf="showImport" (click)="import()"  [disabled]="importBtnDisable"   class="btn btn-primary">Import..</button>
+    <button type="button" style="margin-left: 5px;" (click)="add()" class="btn btn-primary" [style.display]="addBtnVisable?'inline':'none'" [disabled]="addBtnDisable" >Add</button>&nbsp;
+    <button type="button" [disabled]="reverseBtnDisable" [style.display]="reverseBtnVisable?'inline':'none'"  (click)="reverse()" class="btn btn-primary">Reverse</button>&nbsp;
+    <button type="button" [disabled]="detailsBtnDisable" (click)="details()" class="btn btn-primary">Details</button>&nbsp;
+    </div>
+ 
+    <manual-adjustment-editordetails> </manual-adjustment-editordetails>
+
+    <manual-adjustment-import> </manual-adjustment-import>
+    <manual-adjustment-reverse> </manual-adjustment-reverse>
+    <manual-adjustment-customer-id> </manual-adjustment-customer-id>
+    <manual-adjustment-contract-id> </manual-adjustment-contract-id>
+    <manual-adjustment-wholesale-id> </manual-adjustment-wholesale-id> 
+

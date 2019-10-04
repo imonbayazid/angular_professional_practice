@@ -1,0 +1,17 @@
+﻿
+
+<!--<div style="margin: 100px auto; width: 690px;">
+    <img src="/Content/img//.png">
+</div>-->
+<div style="margin:auto; width: 680px;" [innerHTML]="htmlString">
+</div>
+
+<!--<user-settings-popup [style.display]="isPasswordChangeHidden?'inline':'none'"></user-settings-popup>-->
+
+<!--<user-settings-popup *ngIf="isPasswordChangeFormShow" isHidden="true" ></user-settings-popup>-->
+
+
+
+<div class="juForm" (onModalClose)="changePasswordPopupFormClose($event)" [options]="changePasswordPopupFormOptions"></div>
+
+<showupdatedchecks-popup *ngIf="isShowUpdatedChecksFormShow"></showupdatedchecks-popup>

@@ -1,0 +1,19 @@
+﻿<div><h5>{{appService.deployedEnvironment}}  > {{service.navigationName}} > Calculate Prices [{{title}}]</h5></div>
+<calculate-price-profile-list-form></calculate-price-profile-list-form>
+
+<div class="col-md-10">
+    <calculate-price-profile-result-grid></calculate-price-profile-result-grid>
+</div>
+<div class="col-md-2">
+    <pricing-form-options></pricing-form-options>
+</div>
+
+<override-form-options></override-form-options>
+<bpreview-form-options></bpreview-form-options>
+<bppointsimport-form-options></bppointsimport-form-options> 
+<best-price-transactions></best-price-transactions>
+<div class="row">
+    <div class="col-md-offset-11 col-md-1"> 
+        <button type="button" (click)="refreshListResultGrids()" class="btn btn-primary">Refresh</button>
+    </div>
+</div>

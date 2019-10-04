@@ -1,0 +1,8 @@
+﻿<div><h5>{{appService.deployedEnvironment}}  > {{service.navigationName}} > Approve Matrix Changes [{{title}}]</h5></div>
+
+<div class="juForm" [options]="approveMatrixChangesFormOptions"></div>
+<div class="row" style="padding-top:10px;">
+    <div class="col-md-offset-10 col-md-2">
+        <div class="pull-right"><button type="button" (click)="saveBtn()" class="btn btn-primary" [disabled]="!saveBtnStatus">Save</button></div>
+    </div>
+</div>

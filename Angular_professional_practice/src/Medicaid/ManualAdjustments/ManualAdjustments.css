@@ -1,0 +1,13 @@
+.btn-matgin {
+    padding-bottom: 10px;
+}
+
+.isSelectedCSSClass {
+    background-color: steelblue;
+    color: #000000 !important;
+}
+
+.isArchivedCSSClass {
+    color: #000000;
+    background-color: #D3D3D3;
+}
